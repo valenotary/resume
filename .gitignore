@@ -8,7 +8,7 @@
 *.acr
 *.alg
 *.bbl
-*.fdb_latedxmk
+*.fdb_latexmk
 *.fls
 *.pdf
 *.blg
