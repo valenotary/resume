@@ -4,7 +4,7 @@
 
 \title{Resume}
 \author{Franz Anthony Varela (Template courtesy of Scimisc)}
-\date{February 2024}
+\date{November 2025}
 
 %% These are custom commands defined in scimisc-cv.sty
 \cvname{Franz Anthony Varela}
@@ -31,57 +31,54 @@ LinkedIn: Franz Anthony Varela
   \item \textbf{Relevant Coursework}: Deep and Reinforcement Learning | Software Engineering | Numerical Methods | Database Systems | Computer Architecture | Linear Analysis | Algorithm Design and Analysis | Object-Oriented Programming
 \end{itemize}
 
-\section{Work Experience}
-\cvsubsection{Amazon}[Santa Clara, CA][SDE I/II][Feb 2022 - Current]
-\begin{itemize}
-  \item Developing the Alexa Auto App as an out-of-the-box solution for automotive OEMs to integrate in their Android Automotive IVEs
-  \item Lead the effort to overhaul the Alexa Auto App's 1.0 release visuals following UI/UX designer specs
-  \item Implemented a proof-of-concept feature for the Alexa Auto App that integrated smart home cameras into the automotive head unit via vocal utterances
-  \item Acted as the driving force behind encouraging the team to adopt modern Android guidelines, such as Kotlin and Hilt
-\end{itemize}
-\cvsubsection{Amazon}[Santa Clara, CA][SDE I Intern][Jun 2021 - Aug 2021]
-\begin{itemize}
-  \item Worked with the Alexa Automotive team to design, develop, and integrate a new App Launch module in the Auto SDK and AACS
-  \item Utilized the Alexa for Apps API as a foundation for the primary features, while modifying certain aspects to better fit the automotive CX
-  \item Implementation being written in C++ 11 and Java
-\end{itemize}
-\cvsubsection{The Math Center}[Merced, CA][Remedial Tutor][Sept 2019 - Aug 2020]
-\begin{itemize}
-  \item Tutor university students in a wide range of courses (e.g. Calc. I-III, Lin. Alg, etc.)
-  \item Deepen their understanding of mathematical concepts by teaching the material in different ways
-  \item Offer remote learning options, such as Discord or Zoom
-\end{itemize}
-
 \section{Technical Skills}
 \begin{itemize}
-  \item Languages: Kotlin, Java, C/C++, Python, Rust, SQL, \LaTeX{}
-  \item Technologies/Environments: MacOS, Linux (Ubuntu Subshell), Windows, Jupyter Notebook, Git, SciKit-Learn, TensorFlow (2.0), PyTorch, OpenGL, Blender, Processing 3, Arduino, Android, Sqlite3, Unity, Aseprite, FL Studio, CUDA, OpenCV
+  \item Languages: Rust, C/C++, Kotlin, Java, Python, SQL, \LaTeX{}
+  \item Frameworks/Tools: PyTorch, TensorFlow, SciKit‑Learn, OpenCV, CUDA, Unity, Blender, OpenGL, WebGPU (WGPU), Bevy
+  \item Platforms: Linux, Windows, MacOS, Android, Arduino
+  \item Other: Git, Jupyter Notebook, FL Studio, Aseprite
 \end{itemize}
 
-\section{Research Experience}
+\section{Work Experience}
+\cvsubsection{Amazon -- Leo (previously Kuiper)}[Redmond, WA][SDE II][Mar 2025 - Present]
+\begin{itemize}
+  \item Engineered Rust-based Fault Detection, Isolation, and Recovery (FDIR) system for production satellite infrastructure, ensuring performance and space safety
+  \item Reduced RCA time from hours to minutes by automating log downlinking, streamlining operational workflows
+  \item Modernized FDIR codebase with idiomatic Rust practices, improving maintainability and enabling faster feature development
+\end{itemize}
+\cvsubsection{Amazon -- Alexa Auto}[Santa Clara, CA][SDE I/II][Feb 2022 - Mar 2025]
+\begin{itemize}
+  \item Led overhaul of Alexa Auto App UI/UX, deployed across multiple OEM trims.
+  \item Developed proof‑of‑concept feature integrating smart home cameras into automotive head units via voice commands.
+  \item Championed adoption of modern Android practices (Kotlin, dependency injection with Hilt), improving code quality and scalability.
+\end{itemize}
+\cvsubsection{Amazon -- Alexa Auto}[Santa Clara, CA][SDE I Intern][Jun 2021 - Aug 2021]
+\begin{itemize}
+  \item Designed and integrated App Launch module in Auto SDK and AACS, written in C++11 and Java.
+  \item Leveraged Alexa for Apps API to enable seamless automotive app integration.
+\end{itemize}
+
+\section{Research}
+\cvsubsection{Master's Thesis "The Effects of Hybrid Neural Networks on Meta-Learning Objectives"}[Merced, CA][Author][Jun 2021 - Feb 2022]
+\begin{itemize}
+  \item Designed and implemented hybrid neural network architecture Knowledge Representation + Task Inference (KR+TI) to explore generalization in meta-learning on a small scale. 
+  \item Investigated autoencoder variants (vanilla, variational, Hopfield-based) as reusable representation modules for meta-learning tasks.
+  \item Published findings on catastrophic forgetting and dataset complexity effects, contributing to the broader discourse on Artificial General Intelligence (AGI).
+  \item Validated model interpretability by visualizing autoencoder reconstructions and analyzing representation reuse across tasks.
+
+\end{itemize}
 \cvsubsection{"2-Dimensional Online Scheduling"}[Merced, CA][Undergraduate Researcher][Jul 2019 - Aug 2019]
 \begin{itemize}
-  \item Assisted Prof. Sungjin Im in his research on developing a new framework for analyzing low dimensional online scheduling problems, specifically in the 2-Dimensional setting
-  \item Created algorithms in C++, and performed multiple analyses on the runtime of the implementation
-  \item Provided insight into the challenges, limitations, and correctness of the Priority(Max) algorithm with our implementation
+  \item Developed algorithms in C++ to analyze low‑dimensional online scheduling problems.
+  \item Evaluated runtime performance and correctness of the Priority(Max) algorithm.
 \end{itemize}
 
 \section{Projects}
-\cvsubsection{"Smart Gesture Control"}[Seattle, WA][Solo Developer][Oct 2021 - Dec 2021]
+\cvsubsection{Project SoundFrame}[Seattle, WA][Solo Developer][Jan 2025 - Present]
 \begin{itemize}
-  \item A finger-wearable device that recorded gestures to control other smart devices, such as smart LEDs
-  \item Implemented with an Arduino Nano BLE and C++, and utilized an SVM for gesture pattern recognition
-  \item Used AWS Lambdas and Greengrass to communicate between the peripherals and the gesture controller via MQTT
-\end{itemize}
-\cvsubsection{"Bayesian Superpixel Segmentation"}[Bothell, WA][Solo Developer][Apr 2021 - June 2021]
-\begin{itemize}
-  \item An image segmentation algorithm hybrid of Prof. Oren Freifeld's fastSCSP and BASS algorithms
-  \item Implemented in C++ 17
-  \item Achieved acceptable visual results and runtime despite utilizing only a single thread on the CPU
-\end{itemize}
-\section{Awards}
-\begin{itemize}
-  \item Calvin E. Bright Engineering Scholarship
+  \item Developing a faithful yet original remake of "Steambot Chronicles" in Rust, with the Bevy ECS framework
+  \item Spearheading full‑stack development and creative production, including gameplay systems, original music composition (FL Studio), and 3D asset creation (Blender).
+
 \end{itemize}
 
 \end{document}
